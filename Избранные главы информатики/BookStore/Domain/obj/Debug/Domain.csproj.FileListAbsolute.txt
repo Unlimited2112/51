@@ -1,0 +1,48 @@
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\Domain.dll.config
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\Domain.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\Domain.pdb
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\obj\Debug\Domain.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\obj\Debug\Domain.pdb
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\BookStore\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\Domain.dll.config
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\Domain.dll
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\Domain.pdb
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\EntityFramework.dll
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\EntityFramework.xml
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Alexs\Desktop\BookStore\Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Alexs\Desktop\BookStore\Domain\obj\Debug\Domain.csprojAssemblyReference.cache
+C:\Users\Alexs\Desktop\BookStore\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Alexs\Desktop\BookStore\Domain\obj\Debug\Domain.csproj.CopyComplete
+C:\Users\Alexs\Desktop\BookStore\Domain\obj\Debug\Domain.dll
+C:\Users\Alexs\Desktop\BookStore\Domain\obj\Debug\Domain.pdb
