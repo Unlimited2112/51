@@ -1,0 +1,96 @@
+<?php
+class Menu extends FrontController
+{
+	/**
+	 * @var Structure
+	 */
+	protected $Structure;
+	
+	/**
+	 * @var integer
+	 */
+	protected $parent = 0;
+	
+	/**
+	 * @var integer
+	 */
+	protected $maxlevel = 1;
+	
+	/**
+	 * @var array
+	 */
+	protected $whereArray = array('show_in_menu' => 1, 'status' => 1);
+	
+	/**
+	 * @var string
+	 */
+	protected $prefix = 'm_';
+	
+	/**
+	 * @param string $controlName
+	 * @return Menu
+	 */
+	function __construct($controlName = 'Menu')
+	{
+		parent::__construct($controlName);
+		
+		if($controlName == 'Menu')
+		{
+			$this->controlerPath = CONTROLLERS_FRONT_BASE;
+		}
+		
+		$this->Structure = $this->Core->getModel('Structure');
+	}
+
+	function initialize() 
+	{
+		$this->templateVars[$this->prefix.'parent'] = $this->parent = $this->getInputVar('parent', $this->parent);
+		
+		$links = $this->Structure->getTree($this->parent, $this->whereArray);
+		$links = $links[0];
+
+		$this->templateVars[$this->prefix.'items_count'] = 0;
+		$this->templateVars[$this->prefix.'current'] = array();
+		$this->templateVars[$this->prefix.'id'] = array();
+		$this->templateVars[$this->prefix.'title'] = array();
+		$this->templateVars[$this->prefix.'id_template'] = array();
+		$this->templateVars[$this->prefix.'level'] = array();
+		$this->templateVars[$this->prefix.'next_level'] = array();
+		$this->templateVars[$this->prefix.'uri'] = array();
+		$this->templateVars[$this->prefix.'counter'] = array();
+		foreach ($links as $link) 
+		{
+			if ($link['level'] <= $this->maxlevel)
+			{
+				if ($link['id'] == $this->templateVars['current_page_id'])
+				{
+					$this->templateVars[$this->prefix.'current_section'] = $link['system'];
+					$this->templateVars[$this->prefix.'current_section_title'] = $link['title'];
+					$this->templateVars[$this->prefix.'current_section_id'] = $link['id'];
+					$this->templateVars[$this->prefix.'current'][] = 2;
+				}
+				elseif ($this->Structure->isDescendant($this->templateVars['current_page_id'], $link['id'], $links))
+				{
+					$this->templateVars[$this->prefix.'current_section_title'] = $link['title'];
+					$this->templateVars[$this->prefix.'current_section'] = $link['system'];
+					$this->templateVars[$this->prefix.'current_section_id'] = $link['id'];
+					$this->templateVars[$this->prefix.'current'][] = 1;
+				}
+				else
+				{
+					$this->templateVars[$this->prefix.'current'][] = 0;
+				}
+
+				$this->templateVars[$this->prefix.'id'][] = $link['id'];
+				$this->templateVars[$this->prefix.'title'][] = $link['title'];
+				$this->templateVars[$this->prefix.'id_template'][] = $link['id_template'];
+				$this->templateVars[$this->prefix.'level'][] = $link['level'];
+				$this->templateVars[$this->prefix.'next_level'][] = $link['level']+1;
+				$this->templateVars[$this->prefix.'uri'][] = preg_replace('/^\//','',$link['uri']);
+				$this->templateVars[$this->prefix.'counter'][] = $this->templateVars[$this->prefix.'items_count']+1;
+
+				$this->templateVars[$this->prefix.'items_count']++;
+			}
+		}
+	}
+}

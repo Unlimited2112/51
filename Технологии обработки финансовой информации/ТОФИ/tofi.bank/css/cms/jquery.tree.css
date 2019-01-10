@@ -1,0 +1,84 @@
+div.treetable {
+	font-size: 12px;
+	padding: 0px;
+	border: 0px solid;
+}
+
+div.table a {
+	text-decoration: none;
+}
+
+div.table a:hover {
+	text-decoration: none
+}
+
+div.table td.td_tree img {
+	border: 0px solid
+}
+
+div.table td.td_tree {
+	white-space: nowrap
+}
+
+div.table td span.tree_leaf_b {
+	border: 0px solid;
+	color: black;
+	height: 21px;
+	line-height: 21px
+}
+
+div.table td span.tree_leaf_g {
+	border: 0px solid;
+	color: #737373;
+	height: 21px;
+	line-height: 21px
+}
+
+div.table td span.bold {
+	font-weight: bold;
+}
+
+div.table td span.bold {
+	font-weight: bold;
+}
+
+div.table td span.tree_leaf_b span {
+	height: 19px;
+	line-height: 19px;
+	font-size: 12px;
+}
+
+div.table td span.tree_leaf_g span {
+	height: 19px;
+	line-height: 19px;
+	font-size: 12px;
+}
+
+div.table td div.fill {
+	height: 21px;
+	line-height: 21px;
+	background: url(../../../images/cms/tree/filler.gif) repeat-x 0% 50%;
+	margin-right: 5px;
+}
+
+div.table td.td_actions {
+	white-space: nowrap;
+	line-height: 21px;
+}
+
+div.gr_op {
+	padding-top: 10px
+}
+
+div.gr_op a {
+	text-decoration: none;
+}
+
+div.gr_op a:hover {
+	text-decoration: none;
+}
+
+div.table table.dark {
+	background-color: #FBFBF2;
+	color: #737373;
+}

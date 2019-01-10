@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Профиль пользователя";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3>@ViewBag.UserName <small>@ViewBag.Title</small></h3>
+        <p>Роль: @ViewBag.RoleName</p>
+        <h4>Создано тем <span class="label label-default">@ViewBag.CntTopics</span></h4>
+        <h4>Оставлено сообщений <span class="label label-default">@ViewBag.CntMsgs</span></h4>
+        <p>
+            @if (User.Identity.Name == ViewBag.UserName)
+            {
+                <a href="~/Account/ChangePassword/@ViewBag.UserId" class = "btn btn-default btn-sm"><span class="glyphicon glyphicon-cog"></span> Изменить пароль</a>
+            }
+            else if (User.IsInRole("Admin") || (User.IsInRole("Moder") && ViewBag.RoleId != 1))
+            {
+                <a href="~/Account/ChangeRole/@ViewBag.UserId" class = "btn btn-default btn-sm"><span class="glyphicon glyphicon-user"></span> Изменить роль</a>
+            }
+        </p>
+    </div>
+</div>

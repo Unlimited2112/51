@@ -1,0 +1,121 @@
+/* @Packager.Header
+<FileDescription>
+	Styles used by the dialog boxes.
+</FileDescription>
+<Author name="Frederico Knabben" email="cksource.com" />
+*/
+
+body
+{
+	margin: 0px;
+	padding: 10px;
+}
+
+body, td, input, select, textarea
+{
+	font-size: 11px;
+	font-family: 'Microsoft Sans Serif' , Arial, Helvetica, Verdana;
+}
+
+body, .BackColor
+{
+	background-color: #ffffff;
+}
+
+.PopupBody
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.PopupTitle
+{
+	font-weight: bold;
+	font-size: 16px;
+	color: #4F4F4F;
+	border-bottom: #C4C4C4 1px solid;
+	padding: 2px 10px 2px 10px;
+}
+
+.PopupButtons
+{
+	border-bottom: #C4C4C4 1px solid;
+	padding: 7px 0px 7px 10px;
+}
+
+.Button
+{
+	border: #C4C4C4 1px solid;
+	color: #3b3b1f;
+}
+
+.DarkBackground
+{
+	background-color: #d7d79f;
+}
+
+.LightBackground
+{
+	background-color: #ffffbe;
+}
+
+.PopupTitleBorder
+{
+	border-bottom: #d5d59d 1px solid;
+}
+
+.PopupSeparatorArea
+{
+	color: #737357;
+	background-color: #C4C4C4;
+}
+
+.PopupTabArea
+{
+	color: #4F4F4F;
+	border-top: #C4C4C4 1px solid;
+	border-bottom: #C4C4C4 1px solid;
+}
+
+.PopupTabEmptyArea
+{
+	padding-left: 10px ;
+	border-bottom: #d5d59d 1px solid;
+}
+
+.PopupTab, .PopupTabSelected
+{
+	border-right: #d5d59d 1px solid;
+	border-top: #d5d59d 1px solid;
+	border-left: #d5d59d 1px solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	color: #737357;
+}
+
+.PopupTab
+{
+	margin-top: 1px;
+	border-bottom: #d5d59d 1px solid;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.PopupTabSelected
+{
+	font-weight:bold;
+	cursor: default;
+	padding-top: 4px;
+	border-bottom: #f1f1e3 1px solid;
+	background-color: #f1f1e3;
+}
+
+.PopupSelectionBox
+{
+	border: #4F4F4F 1px solid !important;
+	background-color: #C4C4C4 !important;
+	cursor: pointer;
+	cursor: hand;
+}

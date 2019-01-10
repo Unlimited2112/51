@@ -1,0 +1,45 @@
+﻿@model ForumMVC.Models.RegisterModel
+
+@{
+    ViewBag.Title = "Регистрация";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3>@ViewBag.Title</h3>
+@using (Html.BeginForm()) {
+
+    @Html.ValidationSummary(true, "", new { @class = "alert alert-warning" })
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.UserName, new { @class = "control-label" })
+        @Html.TextBoxFor(model => model.UserName, new { @class = "form-control" })
+        <span class="help-block">
+            @Html.ValidationMessageFor(model => model.UserName)
+        </span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Password, new { @class = "control-label" })
+        @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+        <span class="help-block">
+            @Html.ValidationMessageFor(model => model.Password)
+        </span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PasswordConfirm, new { @class = "control-label" })
+        @Html.PasswordFor(model => model.PasswordConfirm, new { @class = "form-control" })
+        <span class="help-block">
+            @Html.ValidationMessageFor(model => model.PasswordConfirm)
+        </span>
+    </div>
+    <input type="submit" value="Авторизация" class="btn btn-default" />
+}
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

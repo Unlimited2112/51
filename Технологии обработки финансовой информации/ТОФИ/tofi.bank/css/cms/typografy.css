@@ -1,0 +1,40 @@
+body {
+	color: #232426;
+	font: 11px Tahoma, Verdana, Helvetica, 'MS Sans Serif', sans-serif
+}
+
+td,th {
+	color: #232426;
+	font: 11px Tahoma, Verdana, Helvetica, 'MS Sans Serif', sans-serif
+}
+
+input,textarea,option,select {
+	color: #000;
+	font: 11px Tahoma, Verdana, Helvetica, 'MS Sans Serif', sans-serif
+}
+
+a {
+	color: #2c2c77;
+	text-decoration: underline
+}
+
+a:hover {
+	color: #333333
+}
+
+.red {
+	color: #df0000
+}
+
+.error {
+	color: #df0000
+}
+
+div.error {
+	padding-bottom: 10px
+}
+
+label.error {
+	display: block;
+	vertical-align: top
+}

@@ -1,0 +1,20 @@
+@import url("core.css");
+
+@import url("reset.css");
+
+@import url("structure.css");
+
+@import url("typografy.css");
+
+.sub-payment {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 5px;
+}
+
+.kudir-table {
+    border-collapse: collapse;
+}
+.kudir-table th { font-weight: bold; }
+.kudir-table th, .kudir-table td { border: #000 1px solid; }
+th.break-words { word-wrap: break-word; }

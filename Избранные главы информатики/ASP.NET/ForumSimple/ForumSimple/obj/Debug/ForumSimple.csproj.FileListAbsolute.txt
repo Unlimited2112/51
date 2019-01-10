@@ -1,0 +1,5 @@
+D:\Яндекс.Диск\Универ\ASP.NET\ForumSimple\ForumSimple\bin\ForumSimple.dll
+D:\Яндекс.Диск\Универ\ASP.NET\ForumSimple\ForumSimple\bin\ForumSimple.pdb
+D:\Яндекс.Диск\Универ\ASP.NET\ForumSimple\ForumSimple\obj\Debug\ForumSimple.dll
+D:\Яндекс.Диск\Универ\ASP.NET\ForumSimple\ForumSimple\obj\Debug\ForumSimple.pdb
+D:\Яндекс.Диск\Универ\ASP.NET\ForumSimple\ForumSimple\obj\Debug\ForumSimple.csprojResolveAssemblyReference.cache

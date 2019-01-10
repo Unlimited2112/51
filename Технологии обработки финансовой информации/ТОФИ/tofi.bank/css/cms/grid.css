@@ -1,0 +1,120 @@
+.grid-area {
+	border: 1px solid #C4C4C4;
+	background-color: #FFFFFF;
+	margin-top: 7px;
+	min-width: 300px;
+	width: 100%;
+}
+
+.grid {
+	background-color: #C4C4C4;
+}
+
+.grid td, .grid.th {
+	background-color: #FFFFFF;
+	padding: 5px 11px 5px 11px;
+}
+
+.grid tr.active td,.grid tr.hl td {
+	background-color: #829AD2;
+}
+
+.grid tr.head td, .grid tr.head th {
+	line-height: 21px;
+	color: #FFFFFF;
+	font-weight: bold;
+	border: 1px solid #FFFFFF;
+	background-color: #2c2c77;
+	padding: 0px 20px 0px 10px;
+	font-size: 10px;
+}
+
+.grid tr.head td a,.grid tr.head td a:visited, .grid tr.head th a,.grid tr.head th a:visited {
+	line-height: 21px;
+	color: #FFFFFF;
+	font-weight: bold;
+	border: 1px solid #FFFFFF;
+	background-color: #2c2c77;
+	padding: 0px 20px 0px 10px;
+	font-size: 10px;
+}
+
+.grid tr.head td.act, .grid tr.head th.act {
+	text-decoration: underline;
+}
+
+.grid tr.head td.check, .grid tr.head th.check {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.grid tr.head td.up, .grid tr.head th.up, .headerSortUp {
+	background: #2c2c77 url(../../../images/cms/ico_asc.gif) no-repeat right
+		center;
+}
+
+.grid tr.head td.down, .grid tr.head th.down, .headerSortDown {
+	background: #2c2c77 url(../../../images/cms/ico_desc.gif) no-repeat right
+		center;
+}
+
+.grid-area .pager {
+	background: #2c2c77;
+	color: #fff;
+	border: 1px solid #C4C4C4;
+	border-top: none;
+	line-height: 19px;
+	height:19px;
+}
+
+.grid-area .pager a {
+	display: block;
+	width: 20px;
+	height: 19px;	
+	float: left;
+}
+
+.grid-area .pager a span {
+	display: none;	
+}
+
+.grid-area .pager a.first {
+	background: url(../../../images/cms/first.gif) no-repeat 7px 7px;
+}
+
+.grid-area .pager a.first:hover {
+	background: #fff url(../../../images/cms/first-hover.gif) no-repeat 7px 7px;	
+}
+
+.grid-area .pager a.prev {
+	background: url(../../../images/cms/prev.gif) no-repeat 7px 7px;
+}
+
+.grid-area .pager a.prev:hover {
+	background: #fff url(../../../images/cms/prev-hover.gif) no-repeat 7px 7px;	
+}
+
+.grid-area .pager a.next {
+	background: url(../../../images/cms/next.gif) no-repeat 7px 7px;
+}
+
+.grid-area .pager a.next:hover {
+	background: #fff url(../../../images/cms/next-hover.gif) no-repeat 7px 7px;	
+}
+
+.grid-area .pager a.last {
+	background: url(../../../images/cms/last.gif) no-repeat 7px 7px;
+}
+
+.grid-area .pager a.last:hover {
+	background: #fff url(../../../images/cms/last-hover.gif) no-repeat 7px 7px;	
+}
+
+.grid-area .pager .pagedisplay {
+	float: left;
+}
+
+.grid-area .pager .pagesize {
+	margin-top: 1px;
+	float: right;
+}

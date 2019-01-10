@@ -1,0 +1,25 @@
+﻿@model ForumMVC.Models.MessageEdit
+
+@{
+    ViewBag.Title = "Удаление сообщения";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3>@ViewBag.TopicName <small>@ViewBag.Title</small></h3>
+        <h4>Вы действительно хотите удалить сообщение?</h4>
+        <small>@Html.DisplayFor(model => model.Content)</small>
+        <br />
+        <br />
+        @using (Html.BeginForm()) {
+        <p>
+            @Html.HiddenFor(model => model.Id)
+            <input type="submit" value="Удалить" class="btn btn-default" />
+        </p>
+        }
+    <p>
+        <a href="~/Messages/List/@Model.TopicId">К списку сообщений</a>
+    </p>
+    </div>
+</div>

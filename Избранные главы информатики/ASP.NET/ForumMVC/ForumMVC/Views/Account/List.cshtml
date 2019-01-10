@@ -1,0 +1,31 @@
+﻿@model PagedList.IPagedList<ForumMVC.Models.User>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Пользователи";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>@ViewBag.Title</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Логин</th>
+            <th>Роль</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td><a href="~/Account/Profile/@item.Login">@item.Login</a></td>
+            <td>@item.Role.Description</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<div>
+    Страница @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) из @Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("List/" + page))
+</div>

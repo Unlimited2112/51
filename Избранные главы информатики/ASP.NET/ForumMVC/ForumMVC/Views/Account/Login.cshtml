@@ -1,0 +1,37 @@
+﻿@model ForumMVC.Models.LogOnModel
+
+@{
+    ViewBag.Title = "Авторизация";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3>@ViewBag.Title</h3>
+@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
+
+    @Html.ValidationSummary(true, "", new { @class = "alert alert-warning" })
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.UserName, new { @class = "control-label" })
+        @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+        <span class="help-block">
+            @Html.ValidationMessageFor(m => m.UserName)
+        </span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Password, new { @class = "control-label" })
+        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+        <span class="help-block">
+            @Html.ValidationMessageFor(m => m.Password)
+        </span>
+    </div>
+    <input type="submit" value="Авторизация" class="btn btn-default" />
+}
+
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

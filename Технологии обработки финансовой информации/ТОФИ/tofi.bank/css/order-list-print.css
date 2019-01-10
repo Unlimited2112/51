@@ -1,0 +1,18 @@
+.top {display: none;}
+#main tr {display: none;}
+#main tr.visible-tr {display: block;}
+#order-list tr {display: block;}
+.leftcol form {display: none;}
+.hide-on-print {display: none !important;}
+table.for-print {
+    display: block !important;
+    font-size: 20px;
+    border-collapse: collapse;
+}
+table.for-print td {
+    font-size: 20px;
+    border: #000 1px solid;
+}
+table.for-print tr {display: block !important;}
+
+.debugger-container { display: none; }

@@ -1,0 +1,107 @@
+html,body {
+	height: 100%
+}
+
+body {
+	background-color: #ffffff
+}
+
+#minWidth {
+	position: relative;
+	height: 100%;
+	text-align: center
+}
+
+html>body #minWidth {
+	height: auto;
+	min-height: 100%
+}
+
+.block {
+	margin: 0 auto;
+	text-align: left
+}
+
+.top {
+	position: relative;
+	z-index: 99;
+}
+
+.navigation {
+	position: relative;
+	z-index: 999;
+	border-bottom: 6px solid #2c2c77;
+	padding-top: 1px;
+	padding-right: 15.182em
+}
+
+.nav li {
+	float: left;
+	height: 43px;
+	padding-right: 1px
+}
+
+.nav li a, .nav li strong {
+	float: left;
+}
+
+.nav li.showRight {
+	float: right;
+}
+
+.nav li.showRight a {
+	color: #4F4F4F;
+	padding: 0 20px !important
+}
+
+.nav li.showRight a:hover {
+	color: #ffffff;
+	padding: 0 20px !important
+}
+
+.nav li.show-profile {
+	padding-left: 4px
+}
+
+.nav li.show-login {
+	padding-left: 4px
+}
+
+.nav li .hr,.nav li a,.nav li a:hover {
+	display: block;
+	color: #4F4F4F;
+	line-height: 42px;
+	height: 43px;
+	padding: 0 17px 0 20px;
+	text-decoration: none
+}
+
+.nav li a:hover {
+	color: #ffffff;
+	font-weight: normal;
+	background-color: #2c2c77;
+}
+
+.nav li .hr,.nav li .hr:hover {
+	color: #fff;
+	font-weight: normal;
+	background-color: #2c2c77;
+}
+
+.nav li.showRight .hr {
+	padding: 0 20px
+}
+
+.sub-menu-title {
+	padding-bottom: 8px;
+}
+
+.sub-menu li {
+	float: left;
+	padding-right: 10px;
+	display: block;
+}
+
+.hand {
+	cursor: pointer;
+}

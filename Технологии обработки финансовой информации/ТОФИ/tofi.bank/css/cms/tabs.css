@@ -1,0 +1,35 @@
+.form_brd {
+	border-left: 1px solid #C4C4C4;
+	border-right: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	padding: 0px 10px 0px 10px;
+}
+
+.tab {
+	cursor: pointer;
+	background-color: #829ad2;
+	line-height: 22px;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding-left: 16px;
+	padding-right: 17px;
+	margin: 0px;
+}
+
+.tab-act {
+	cursor: pointer;
+	background-color: #2c2c77;
+	line-height: 22px;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding-left: 16px;
+	padding-right: 17px;
+	margin: 0px;
+}
+
+.back-tab {
+	background: url(../../../images/cms/tabBackground.gif) repeat-x left
+		bottom;
+}

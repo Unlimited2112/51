@@ -1,0 +1,26 @@
+﻿@model ForumMVC.Models.ChangeRoleModel
+
+@{
+    ViewBag.Title = "Изменение роли";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3>@ViewBag.UserName <small>@ViewBag.Title</small></h3>
+@using (Html.BeginForm())
+{
+    @Html.DropDownList("RoleId", ViewBag.Roles as SelectList, new { @class="form-control" })
+    <br />
+    @Html.HiddenFor(model => model.UserId)
+    <input type="submit" value="Изменить роль" class="btn btn-default" />
+}
+    <p>
+        <a href="~/Account/Profile/@ViewBag.UserName">К профилю</a>
+    </p>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

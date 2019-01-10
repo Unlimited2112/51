@@ -1,0 +1,1 @@
+$(function() {	// Use this example, or...	$('a.lightbox').lightBox(); // Select all links with lightbox class});$(window).resize(function() {    whereFooter();});

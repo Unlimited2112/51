@@ -1,0 +1,50 @@
+﻿@model PagedList.IPagedList<ForumMVC.Models.TopicView>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = ViewBag.Rubric.Name;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>@ViewBag.Title</h3>
+@if (User.IsInRole("Admin") || User.IsInRole("Moder") || User.IsInRole("User"))
+{
+<p>
+    <a href="~/Topics/Create/@ViewBag.Rubric.Id" class = "btn btn-default btn-sm"><span class="glyphicon glyphicon-plus"></span> Добавить</a>
+</p>
+}
+@if (ViewBag.TopicCnt > 0)
+{
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Тема</th>
+            <th>Автор</th>
+            <th>Ответов</th>
+            <th>Активность</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td><a href="~/Messages/List/@item.Id">@item.Name</a><br /><small>@item.Content</small></td>
+            <td><a href="~/Account/Profile/@item.TopicStarter">@item.TopicStarter</a></td>
+            <td>@item.CntMsg</td>
+            <td><a href="~/Account/Profile/@item.LastWriter">@item.LastWriter</a><br /><small>@item.Dates</small></td>
+            <td>
+                @if (User.IsInRole("Admin") || User.IsInRole("Moder"))
+                {
+                    <a href="~/Topics/Edit/@item.Id" class = "btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="~/Topics/Delete/@item.Id" class = "btn btn-default btn-sm"><span class="glyphicon glyphicon-remove"></span></a>
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<div>
+    Страница @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) из @Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("List/" + ViewBag.Rubric.Id + "/" + page))
+</div>
+}

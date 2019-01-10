@@ -1,0 +1,34 @@
+$(document).ready(function() { 
+	$galleryList = $('.gallery ul li img');
+	if($galleryList.length > 0)
+	{
+		$galleryList.preload({
+			placeholder:'/images/preloaders/gallery-list-placeholder.png',
+			notFound:'/images/preloaders/gallery-list-notfound.png'
+		});
+
+		$galleryItems = $('.gallery ul li a');
+		$galleryItems.click(function(){
+			getPopup({type: 'gallery', galleryPopup: 1, itemIndex: ($galleryItems.index(this)+1)});
+			return false;
+		});
+	}
+
+	$contactsImage = $('.map-p');
+	if($contactsImage.length > 0)
+	{
+		$contactsImage.click(function(){
+			getPopup({type: 'gallery', galleryPopup: 1, itemIndex: 1});
+			return false;
+		});
+	}
+
+//	$contactsSend = $('div.contacts p.send a');
+//	if($contactsSend.length > 0)
+//	{
+//		$contactsSend.click(function(){
+//			getPopup({type: 'contacts', contactsPopup: 1});
+//			return false;
+//		});
+//	}
+});

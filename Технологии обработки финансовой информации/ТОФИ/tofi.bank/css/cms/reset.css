@@ -1,0 +1,95 @@
+dt,dl,dd,h1,h2,h3,h4,h5,p,html,body {
+	padding: 0;
+	margin: 0
+}
+
+img {
+	border: 0;
+	vertical-align: top
+}
+
+:focus,a:active {
+	outline: none
+}
+
+.cfix {
+	width: 100%
+}
+
+.cfix:after {
+	content: ".";
+	display: block;
+	font-size: 1px;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+
+.cfix {
+	display: inline-block;
+}
+
+/* Hide from IE Mac \*/
+.cfix {
+	display: block;
+}
+
+/* End hide from IE Mac */
+.nolist {
+	margin: 0;
+	padding: 0;
+	list-style-type: none
+}
+
+.width100 {
+	width: 100%;
+}
+
+.width75 {
+	width: 75%;
+}
+
+.width50 {
+	width: 50%;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+.alignCenter {
+	text-align: center;
+}
+
+.mar-r {
+	margin-right: -15%
+}
+
+form {
+	margin: 0;
+	padding: 0
+}
+
+.clr {
+	clear: both;
+	float: none !important;
+	height: 1px !important;
+	font-size: 1px !important;
+	border: none;
+	margin: 0 !important;
+	padding: 0 !important;
+	background: transparent !important;
+	visibility: hidden !important
+}

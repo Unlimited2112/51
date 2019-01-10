@@ -1,0 +1,60 @@
+﻿@model PagedList.IPagedList<ForumMVC.Models.Message>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = ViewBag.Topic.Name;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3><a href="~/Topics/List/@ViewBag.Topic.Rubric.Id">@ViewBag.Topic.Rubric.Name</a> / @ViewBag.Title</h3>
+@if (User.IsInRole("Admin") || User.IsInRole("Moder") || User.IsInRole("User"))
+{
+<p>
+    <a href="~/Messages/Create/@ViewBag.Topic.Id" class = "btn btn-default btn-sm"><span class="glyphicon glyphicon-plus"></span> Добавить</a>
+</p>
+}
+<table ID="itemPlaceholderContainer" runat="server" class="table table-striped">
+    <tbody>
+        <tr>
+            <td class="col-xs-2">
+                <a href="~/Account/Profile/@ViewBag.Topic.User.Login">@ViewBag.Topic.User.Login</a>
+            </td>
+            <td class="col-xs-9">
+                <small>@ViewBag.Topic.Content</small>
+            </td>
+            <td class="col-xs-1">
+            </td>
+        </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="col-xs-2">
+                <a href="~/Account/Profile/@item.User.Login">@item.User.Login</a>
+                <br />
+                <small>@item.Dates</small>
+            </td>
+            <td class="col-xs-9">
+            @if (item.Disabled)
+            {
+                <small>Сообщение скрыто модератором</small>
+            }
+            else
+            {
+                <small>@item.Content</small>
+            }
+            </td>
+            <td class="col-xs-1">
+                @if (User.IsInRole("Admin") || User.IsInRole("Moder") || item.User.Login == User.Identity.Name)
+                {
+                    <a href="~/Messages/Edit/@item.Id" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="~/Messages/Delete/@item.Id" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-remove"></span></a>
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<div>
+    Страница @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) из @Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("List/" + ViewBag.Topic.Id + "/" + page))
+</div>
